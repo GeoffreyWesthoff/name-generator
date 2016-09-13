@@ -180,6 +180,7 @@
     <object>objects\obj_foreign</object>
     <object>objects\obj_both</object>
     <object>objects\obj_regioncontroller</object>
+    <object>objects\obj_materialbar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_app</room>
