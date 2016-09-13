@@ -186,7 +186,7 @@
     <room>rooms\rm_app_landscape</room>
     <room>rooms\rm_ios4</room>
     <room>rooms\rm_region</room>
-    <room>rooms\room5</room>
+    <room>rooms\rm_region_landscape</room>
     <room>rooms\rm_wear</room>
   </rooms>
   <help>
