@@ -8,36 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.orientation=0
-
-if (os_device == device_ios_iphone_retina)  {
-room_goto(rm_ios4)
-}
-else
-exit;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -69,6 +39,53 @@ global.orientation=1
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.api_gender=""
+global.api_region=""
+global.api_minlen=""
+global.api_maxlen=""
+global.name=""
+global.surname=""
+global.gender=""
+global.region=""
+global.chosen_region=""
+global.gender_chosen=""
+
+global.orientation=0
+
+
+if (os_device == device_ios_iphone_retina)  {
+room_goto(rm_ios4)
+}
+
+
+var screen_width = display_get_width()
+var screen_height = display_get_height()
+if  (screen_height &lt;= 320 &amp;&amp; screen_width &lt;=320){
+room_goto(rm_wear);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -90,7 +107,7 @@ global.orientation=1
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -111,9 +128,10 @@ global.orientation=1
           <argument>
             <kind>1</kind>
             <string>draw_set_halign(fa_center);
-draw_text(500,80,"Name: " + global.name + " " + global.surname);
-draw_text(500,140,"Gender: " + global.gender);
-draw_text(500,200,"Region: " + global.region);
+draw_text(500,140,"Name: " + global.name + " " + global.surname);
+draw_text(500,200,"Gender: " + global.gender);
+draw_text(500,260,"Region: " + global.region);
+draw_text(216,48,"Names")
 </string>
           </argument>
         </arguments>
