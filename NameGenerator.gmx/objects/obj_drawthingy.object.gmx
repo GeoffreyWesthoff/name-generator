@@ -128,10 +128,10 @@ room_goto(rm_wear);
           <argument>
             <kind>1</kind>
             <string>draw_set_halign(fa_center);
-draw_text(500,140,"Name: " + global.name + " " + global.surname);
-draw_text(500,200,"Gender: " + global.gender);
-draw_text(500,260,"Region: " + global.region);
-draw_text(216,48,"Names")
+draw_text(500,180,"Name: " + global.name + " " + global.surname);
+draw_text(500,240,"Gender: " + global.gender);
+draw_text(500,300,"Region: " + global.region);
+
 </string>
           </argument>
         </arguments>

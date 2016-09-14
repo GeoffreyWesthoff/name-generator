@@ -104,6 +104,9 @@
     <sprite>sprites\spr_foreign</sprite>
     <sprite>sprites\spr_both</sprite>
     <sprite>sprites\spr_materialbar</sprite>
+    <sprite>sprites\spr_materialbarland</sprite>
+    <sprite>sprites\spr_back</sprite>
+    <sprite>sprites\spr_fab</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -112,9 +115,11 @@
   <fonts name="fonts">
     <font>fonts\ft_standard</font>
     <font>fonts\ft_wear</font>
+    <font>fonts\ft_appbar</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_generate</object>
+    <object>objects\obj_generate_wear</object>
     <object>objects\obj_gender</object>
     <object>objects\obj_male</object>
     <object>objects\obj_female</object>
@@ -181,6 +186,8 @@
     <object>objects\obj_both</object>
     <object>objects\obj_regioncontroller</object>
     <object>objects\obj_materialbar</object>
+    <object>objects\obj_materialbarland</object>
+    <object>objects\obj_back</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_app</room>
