@@ -39,8 +39,8 @@ if global.chosen_region!=""
 
 if global.chosen_region=""
 {global.api_region=("")}
-if os_is_network_connected()=true{
-http_get("http://uinames.com/api/?"+global.api_gender+global.api_region+global.chosen_region+global.api_minlen+global.api_maxlen)}
+
+http_get("http://uinames.com/api/?"+global.api_gender+global.api_region+global.chosen_region+global.api_minlen+global.api_maxlen)
 
 </string>
           </argument>

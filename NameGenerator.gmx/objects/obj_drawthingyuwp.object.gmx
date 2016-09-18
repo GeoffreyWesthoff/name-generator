@@ -78,10 +78,9 @@ room_goto(rm_app_landscape);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_center);
-draw_text(512,128,"Name: " + global.name + " " + global.surname)
-draw_text(512,188,"Gender: " + global.gender)
-draw_text(512,248,"Region: " + global.region)
+            <string>draw_text(64,168,"Name: " + global.name + " " + global.surname)
+draw_text(64,228,"Gender: " + global.gender)
+draw_text(64,288,"Region: " + global.region)
 </string>
           </argument>
         </arguments>

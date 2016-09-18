@@ -52,11 +52,11 @@
   </views>
   <instances>
     <instance objName="obj_generate" x="1780" y="952" name="inst_71238B57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gender" x="1184" y="480" name="inst_2370D7C2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_region" x="1184" y="608" name="inst_8A52670F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minlen" x="1184" y="736" name="inst_5C6E3ACA" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_maxlen" x="1184" y="864" name="inst_C54669B4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_foreign" x="1184" y="992" name="inst_80F4E6FC" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gender" x="1184" y="416" name="inst_2370D7C2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_region" x="1184" y="544" name="inst_8A52670F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minlen" x="1184" y="672" name="inst_5C6E3ACA" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_maxlen" x="1184" y="800" name="inst_C54669B4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_foreign" x="1184" y="928" name="inst_80F4E6FC" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_drawthingyuwp" x="0" y="0" name="inst_14AAF95C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_materialbarland" x="0" y="0" name="inst_6F185CE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

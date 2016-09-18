@@ -34,6 +34,8 @@ if (room==rm_app &amp;&amp; (display_get_orientation()==display_landscape || dis
 room_goto(rm_app_landscape);
 global.orientation=1
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -66,9 +68,8 @@ global.gender=""
 global.region=""
 global.chosen_region=""
 global.gender_chosen=""
-
 global.orientation=0
-
+display_set_ui_visibility(1)
 
 if (os_device == device_ios_iphone_retina)  {
 room_goto(rm_ios4)
@@ -107,7 +108,7 @@ room_goto(rm_wear);
           </argument>
           <argument>
             <kind>4</kind>
-            <string>1</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -127,10 +128,9 @@ room_goto(rm_wear);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_center);
-draw_text(500,180,"Name: " + global.name + " " + global.surname);
-draw_text(500,240,"Gender: " + global.gender);
-draw_text(500,300,"Region: " + global.region);
+            <string>draw_text(64,180,"Name: " + global.name + " " + global.surname);
+draw_text(64,240,"Gender: " + global.gender);
+draw_text(64,300,"Region: " + global.region);
 
 </string>
           </argument>

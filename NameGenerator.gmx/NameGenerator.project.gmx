@@ -107,6 +107,7 @@
     <sprite>sprites\spr_materialbarland</sprite>
     <sprite>sprites\spr_back</sprite>
     <sprite>sprites\spr_fab</sprite>
+    <sprite>sprites\spr_fabpress</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

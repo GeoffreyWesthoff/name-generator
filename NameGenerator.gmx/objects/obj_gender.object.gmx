@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>if global.orientation=0 {
-instance_create(540,860,obj_both)
-instance_create(540,960,obj_male)
-instance_create(540,1060,obj_female)
+instance_create(540,1000,obj_both)
+instance_create(540,1100,obj_male)
+instance_create(540,1200,obj_female)
 }
 
 else if global.orientation=1 {
