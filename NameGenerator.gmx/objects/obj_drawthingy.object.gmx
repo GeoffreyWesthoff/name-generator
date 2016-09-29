@@ -26,14 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>if (room==rm_app_landscape &amp;&amp; (display_get_orientation()==display_portrait || display_get_orientation()==display_portrait_flipped)) {
-room_goto(rm_app);
-global.orientation=0
+    room_goto(rm_app);
+    global.orientation=0
 }
 
 if (room==rm_app &amp;&amp; (display_get_orientation()==display_landscape || display_get_orientation()==display_landscape_flipped)) {
 room_goto(rm_app_landscape);
 global.orientation=1
 }
+
 
 
 </string>
@@ -69,7 +70,7 @@ global.region=""
 global.chosen_region=""
 global.gender_chosen=""
 global.orientation=0
-display_set_ui_visibility(1)
+
 
 if (os_device == device_ios_iphone_retina)  {
 room_goto(rm_ios4)
@@ -81,6 +82,9 @@ var screen_height = display_get_height()
 if  (screen_height &lt;= 320 &amp;&amp; screen_width &lt;=320){
 room_goto(rm_wear);
 }
+display_set_ui_visibility(256|0);
+
+
 
 </string>
           </argument>
@@ -131,6 +135,8 @@ room_goto(rm_wear);
             <string>draw_text(64,180,"Name: " + global.name + " " + global.surname);
 draw_text(64,240,"Gender: " + global.gender);
 draw_text(64,300,"Region: " + global.region);
+draw_text(64,360,string(global.screen_height));
+draw_text(64,420,room_get_name(room));
 
 </string>
           </argument>

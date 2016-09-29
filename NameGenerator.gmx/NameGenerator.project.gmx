@@ -39,7 +39,9 @@
       <filename>offlinenames.ini</filename>
     </datafile>
   </datafiles>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\GooglePlayServicesExtension</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_generate</sprite>
@@ -189,9 +191,12 @@
     <object>objects\obj_materialbar</object>
     <object>objects\obj_materialbarland</object>
     <object>objects\obj_back</object>
+    <object>objects\obj_banner</object>
+    <object>objects\obj_buttontype</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_app</room>
+    <room>rooms\rm_app_navkeys</room>
     <room>rooms\rm_app_landscape</room>
     <room>rooms\rm_ios4</room>
     <room>rooms\rm_region</room>

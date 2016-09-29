@@ -63,7 +63,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room==rm_app {
+            <string>if (room==rm_app || rm_app_navkeys) {
 draw_text(48,48,"Names");
 }
 else if room==rm_region  {
