@@ -69,16 +69,30 @@ http_get("http://uinames.com/api/?"+global.api_gender+global.api_region+global.c
             <kind>1</kind>
             <string>var json = async_load[? "result"]
 
-var map = json_decode(json)
+if (!is_undefined(json)){
+var map = json_decode(json)}
+else if (is_undefined(json)){
+map = -1}
+
+
 if (map == -1)
 {show_message("Result invalid");exit;}
 
 if (ds_map_exists(map, "name"))
-{global.name = map [? "name"] 
-global.surname = map [? "surname"]
-global.gender = map [? "gender"]
-global.region = map [? "region"]
-}
+    {global.name = map [? "name"]}
+
+if (ds_map_exists(map, "surname")){
+    global.surname = map [? "surname"]}
+
+if (ds_map_exists(map, "gender")){
+    global.gender = map [? "gender"]}
+
+if (ds_map_exists(map, "region")){
+    global.region = map [? "region"]}
+
+
+
+
 </string>
           </argument>
         </arguments>

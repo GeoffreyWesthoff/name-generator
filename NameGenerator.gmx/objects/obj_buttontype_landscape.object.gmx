@@ -50,17 +50,17 @@ global.device_height=0
           <argument>
             <kind>1</kind>
             <string>global.screen = application_get_position()
-global.screen_height = global.screen[3]
-global.device_height=display_get_height()
+global.screen_width = global.screen[2]
+global.device_width=display_get_width()
 
-if ((global.screen_height==1920 || global.screen_height==2560 || global.screen_height==1024) &amp;&amp; room==rm_app_navkeys &amp;&amp; global.orientation==0)
+if ((global.screen_width==1920 || global.screen_width==2560 || global.screen_width==1024) &amp;&amp; room==rm_app_navkeys &amp;&amp; global.orientation==0)
 {
-room_goto(rm_app);
+room_goto(rm_app_landscape);
 }
 
-else if ((global.screen_height==1776 ||global.screen_height==2392 || global.screen_height==976) &amp;&amp; room==rm_app &amp;&amp; global.orientation==0)
+else if ((global.screen_width==1776 ||global.screen_width==2392 || global.screen_width==976) &amp;&amp; room==rm_app &amp;&amp; global.orientation==0)
 {
-room_goto(rm_app_navkeys);
+room_goto(rm_app_landscape_navkeys);
 }
 
 
@@ -86,7 +86,7 @@ room_goto(rm_app_navkeys);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(64,540,string(global.device_height));
+            <string>draw_text(64,540,string(global.device_width));
 </string>
           </argument>
         </arguments>

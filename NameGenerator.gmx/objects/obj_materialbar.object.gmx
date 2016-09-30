@@ -63,11 +63,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room==rm_app || rm_app_navkeys) {
-draw_text(48,48,"Names");
+            <string>if (room==rm_app || room==rm_app_navkeys) {
+draw_text(48,45,"Names");
 }
 else if room==rm_region  {
-draw_text(216,48,"Names");
+draw_text(216,45,"Names");
 }
 </string>
           </argument>
