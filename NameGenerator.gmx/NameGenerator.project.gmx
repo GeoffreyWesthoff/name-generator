@@ -2,44 +2,13 @@
 <assets>
   <Configs name="configs">
     <Config>Configs\Default</Config>
+    <Config>Configs\UWP</Config>
   </Configs>
-  <datafiles number="4" name="datafiles">
-    <datafile>
-      <name>noto.ttf</name>
-      <exists>-1</exists>
-      <size>305872</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>noto.ttf</filename>
-    </datafile>
-    <datafile>
-      <name>offlinenames.ini</name>
-      <exists>-1</exists>
-      <size>1430</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>17592940089582</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>offlinenames.ini</filename>
-    </datafile>
-  </datafiles>
-  <NewExtensions/>
+  <datafiles number="4" name="datafiles"/>
+  <NewExtensions>
+    <extension index="0">extensions\GooglePlayServicesExtension</extension>
+    <extension index="1">extensions\Share</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_generate</sprite>
@@ -104,17 +73,25 @@
     <sprite>sprites\spr_foreign</sprite>
     <sprite>sprites\spr_both</sprite>
     <sprite>sprites\spr_materialbar</sprite>
+    <sprite>sprites\spr_materialbarland</sprite>
+    <sprite>sprites\spr_back</sprite>
+    <sprite>sprites\spr_fab</sprite>
+    <sprite>sprites\spr_fabpress</sprite>
+    <sprite>sprites\spr_share</sprite>
+    <sprite>sprites\spr_more</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
-    <font>fonts\ft_standard</font>
     <font>fonts\ft_wear</font>
+    <font>fonts\ft_appbar</font>
+    <font>fonts\ft_normal</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_generate</object>
+    <object>objects\obj_generate_wear</object>
     <object>objects\obj_gender</object>
     <object>objects\obj_male</object>
     <object>objects\obj_female</object>
@@ -180,13 +157,27 @@
     <object>objects\obj_foreign</object>
     <object>objects\obj_both</object>
     <object>objects\obj_regioncontroller</object>
+    <object>objects\obj_materialbar</object>
+    <object>objects\obj_materialbarland</object>
+    <object>objects\obj_back</object>
+    <object>objects\obj_banner</object>
+    <object>objects\obj_buttontype</object>
+    <object>objects\obj_buttontype_region</object>
+    <object>objects\obj_buttontype_region_landscape</object>
+    <object>objects\obj_buttontype_landscape</object>
+    <object>objects\obj_share</object>
+    <object>objects\obj_more</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_app</room>
+    <room>rooms\rm_app_navkeys</room>
     <room>rooms\rm_app_landscape</room>
+    <room>rooms\rm_app_landscape_navkeys</room>
     <room>rooms\rm_ios4</room>
     <room>rooms\rm_region</room>
-    <room>rooms\room5</room>
+    <room>rooms\rm_region_navkeys</room>
+    <room>rooms\rm_region_landscape</room>
+    <room>rooms\rm_region_landscape_navkeys</room>
     <room>rooms\rm_wear</room>
   </rooms>
   <help>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>12</kind>
-            <font>ft_standard</font>
+            <font>ft_appbar</font>
           </argument>
           <argument>
             <kind>4</kind>
