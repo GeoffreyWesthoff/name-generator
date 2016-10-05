@@ -26,12 +26,25 @@
           <argument>
             <kind>1</kind>
             <string>if (room==rm_app_landscape &amp;&amp; (display_get_orientation()==display_portrait || display_get_orientation()==display_portrait_flipped)) {
-room_goto(rm_app);
+room_goto(rm_app)
+global.orientation=0;
 }
 
 if (room==rm_app &amp;&amp; (display_get_orientation()==display_landscape || display_get_orientation()==display_landscape_flipped)) {
-room_goto(rm_app_landscape);
+room_goto(rm_app_landscape)
+global.orientation=1;
 }
+
+if (room==rm_app_landscape_navkeys  &amp;&amp; (display_get_orientation()==display_portrait || display_get_orientation()==display_portrait_flipped)) {
+    room_goto(rm_app_navkeys);
+    global.orientation=0
+}
+
+if (room==rm_app_navkeys &amp;&amp; (display_get_orientation()==display_landscape || display_get_orientation()==display_landscape_flipped)) {
+room_goto(rm_app_landscape_navkeys);
+global.orientation=1
+}
+
 </string>
           </argument>
         </arguments>
@@ -54,7 +67,7 @@ room_goto(rm_app_landscape);
         <arguments>
           <argument>
             <kind>12</kind>
-            <font>ft_standard</font>
+            <font>ft_normal</font>
           </argument>
           <argument>
             <kind>4</kind>
@@ -78,9 +91,9 @@ room_goto(rm_app_landscape);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(64,168,"Name: " + global.name + " " + global.surname)
-draw_text(64,228,"Gender: " + global.gender)
-draw_text(64,288,"Region: " + global.region)
+            <string>draw_text(48,168,"Name: " + global.name + " " + global.surname)
+draw_text(48,248,"Gender: " + global.gender)
+draw_text(48,328,"Region: " + global.region)
 </string>
           </argument>
         </arguments>

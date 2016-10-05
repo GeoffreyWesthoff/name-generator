@@ -60,6 +60,9 @@
     <instance objName="obj_drawthingyuwp" x="32" y="160" name="inst_14AAF95C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_materialbarland" x="0" y="0" name="inst_6F185CE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_buttontype" x="64" y="160" name="inst_5C7569CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_banner" x="96" y="160" name="inst_5E5C2F57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_share" x="1754" y="72" name="inst_7B29B6E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_more" x="1880" y="72" name="inst_9AF0AAB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

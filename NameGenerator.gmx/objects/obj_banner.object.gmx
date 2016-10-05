@@ -31,12 +31,48 @@ global.dpi=0
 global.loaded=false
 GoogleMobileAds_Init("");
 alarm_set(0,30)
+alarm_set(1,0)
 //OnePlus 3
 GoogleMobileAds_UseTestAds(true,"7DA8A5B216E868636B382A7B9756A4E6")
-//Nexus 5
+//Nexus 5 CM11
 //GoogleMobileAds_UseTestAds(true,"332BA822A105AC4BE040A8609EAD9AD1")
 //Galaxy Tab 3
 //GoogleMobileAds_UseTestAds(true,"E946AAEBA57DDEAC34C8C1EECF52BE8D")
+//Nexus 5 MIUI
+//GoogleMobileAds_UseTestAds(true,"6C0442F1EE5EEE105A3A08E8E193E942")
+//Nexus 5 Nougat
+//GoogleMobileAds_UseTestAds(true,"069B4A6E29F01E78CFB714B6F4F18795")
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ((room == rm_app || room == rm_app_navkeys) &amp;&amp; global.loaded==1){
+GoogleMobileAds_MoveBanner(0,global.display_height-global.display_scale*48)}
+
+if ((room == rm_app_landscape || room == rm_app_landscape_navkeys) &amp;&amp; global.loaded==1){
+GoogleMobileAds_MoveBanner(0,global.display_height-global.display_scale*48)}
+
+
+
+alarm_set(1,150)
 
 </string>
           </argument>
@@ -61,12 +97,15 @@ GoogleMobileAds_UseTestAds(true,"7DA8A5B216E868636B382A7B9756A4E6")
           <argument>
             <kind>1</kind>
             <string>var display=application_get_position()
-display_height=display[3]
+global.display_height=display[3]
+global.display_width=display[2]
 dpx=display_get_dpi_x()
 dpy=display_get_dpi_y()
 global.dpi=dpx
 global.display_scale=global.dpi/160
-GoogleMobileAds_AddBannerAt("ca-app-pub-8630359621774418/4768380881",GoogleMobileAds_Banner,20,display_height-(48*global.display_scale))
+if (room == rm_app || room == rm_app_landscape || room == rm_app_navkeys || room == rm_app_landscape_navkeys){
+GoogleMobileAds_AddBannerAt("ca-app-pub-8630359621774418/4768380881",GoogleMobileAds_Banner,20,global.display_height-(48*global.display_scale))}
+
 </string>
           </argument>
         </arguments>
@@ -89,7 +128,7 @@ GoogleMobileAds_AddBannerAt("ca-app-pub-8630359621774418/4768380881",GoogleMobil
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room == rm_app &amp;&amp; global.loaded==true &amp;&amp; obj_gender.y==1312){
+            <string>if ((room == rm_app || room == rm_app_navkeys) &amp;&amp; global.loaded==true &amp;&amp; (obj_gender.y==1312 || obj_gender.y==1184)){
 obj_gender.y-=200
 obj_generate.y-=200
 obj_region.y-=200
@@ -98,7 +137,7 @@ obj_minlen.y-=200
 obj_foreign.y-=200
 }
 
-else if (room == rm_app &amp;&amp; global.loaded==false &amp;&amp; obj_gender.y==1112){
+else if ((room == rm_app || room==rm_app_navkeys) &amp;&amp; global.loaded==false &amp;&amp; (obj_gender.y==1112 || obj_gender.y==984)){
 obj_gender.y+=200
 obj_generate.y+=200
 obj_region.y+=200
@@ -107,6 +146,8 @@ obj_minlen.y+=200
 obj_foreign.y+=200
 }
 
+if (room == rm_region || room == rm_region_landscape || room == rm_region_navkeys|| room == rm_region_landscape_navkeys){
+GoogleMobileAds_MoveBanner(-1,-1)}
 
 </string>
           </argument>
@@ -132,30 +173,6 @@ obj_foreign.y+=200
             <kind>1</kind>
             <string>global.loaded = ds_map_find_value(async_load, "loaded")
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(64,600,string(global.display_scale));
-draw_text(64,660,string(global.dpi));
 </string>
           </argument>
         </arguments>

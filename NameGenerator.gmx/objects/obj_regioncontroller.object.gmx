@@ -34,6 +34,17 @@ if (room==rm_region &amp;&amp; (display_get_orientation()==display_landscape || 
 room_goto(rm_region_landscape);
 global.orientation=1
 }
+
+if (room==rm_region_landscape_navkeys &amp;&amp; (display_get_orientation()==display_portrait || display_get_orientation()==display_portrait_flipped)) {
+room_goto(rm_region_navkeys);
+global.orientation=0
+}
+
+if (room==rm_region_navkeys &amp;&amp; (display_get_orientation()==display_landscape || display_get_orientation()==display_landscape_flipped)) {
+room_goto(rm_region_landscape_navkeys);
+global.orientation=1
+}
+
 </string>
           </argument>
         </arguments>

@@ -25,13 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.orientation=0 &amp;&amp; global.loaded==false) {
+            <string>if (global.orientation==0 &amp;&amp; global.loaded==false &amp;&amp; room==rm_app) {
 instance_create(540,1000,obj_both)
 instance_create(540,1100,obj_male)
 instance_create(540,1200,obj_female)
 }
 
-if (global.orientation=0 &amp;&amp; global.loaded==true) {
+if (global.orientation==0 &amp;&amp; global.loaded==false &amp;&amp; room==rm_app_navkeys) {
+instance_create(540,800,obj_both)
+instance_create(540,900,obj_male)
+instance_create(540,1000,obj_female)
+}
+
+if (global.orientation==0 &amp;&amp; global.loaded==true &amp;&amp; room==rm_app_navkeys) {
+instance_create(540,600,obj_both)
+instance_create(540,700,obj_male)
+instance_create(540,800,obj_female)
+}
+
+
+if (global.orientation==0 &amp;&amp; global.loaded==true &amp;&amp; room==rm_app) {
 instance_create(540,800,obj_both)
 instance_create(540,900,obj_male)
 instance_create(540,1000,obj_female)

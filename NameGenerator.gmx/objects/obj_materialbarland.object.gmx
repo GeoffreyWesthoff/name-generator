@@ -64,10 +64,10 @@
           <argument>
             <kind>1</kind>
             <string>if (room==rm_app_landscape || room==rm_app_landscape_navkeys) {
-draw_text(48,48,"Names");
+draw_text(48,32,"Names");
 }
-else if room==rm_region_landscape  {
-draw_text(216,48,"Names");
+else if (room==rm_region_landscape || room == rm_region_landscape_navkeys) {
+draw_text(216,32,"Names");
 }
 </string>
           </argument>

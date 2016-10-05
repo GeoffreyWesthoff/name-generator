@@ -53,40 +53,17 @@ global.device_height=0
 global.screen_width = global.screen[2]
 global.device_width=display_get_width()
 
-if ((global.screen_width==1920 || global.screen_width==2560 || global.screen_width==1024) &amp;&amp; room==rm_app_navkeys &amp;&amp; global.orientation==0)
+if ((global.screen_width==1920 || global.screen_width==2560 || global.screen_width==1024) &amp;&amp; room==rm_app_navkeys &amp;&amp; global.orientation==1)
 {
 room_goto(rm_app_landscape);
 }
 
-else if ((global.screen_width==1776 ||global.screen_width==2392 || global.screen_width==976) &amp;&amp; room==rm_app &amp;&amp; global.orientation==0)
+else if ((global.screen_width==1776 ||global.screen_width==2392 || global.screen_width==976) &amp;&amp; room==rm_app &amp;&amp; global.orientation==1)
 {
 room_goto(rm_app_landscape_navkeys);
 }
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(64,540,string(global.device_width));
 </string>
           </argument>
         </arguments>

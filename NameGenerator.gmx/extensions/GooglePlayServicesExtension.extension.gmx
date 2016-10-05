@@ -18,7 +18,7 @@
   <macsourcedir></macsourcedir>
   <maclinkerflags></maclinkerflags>
   <maccompilerflags></maccompilerflags>
-  <androidinject>&lt;meta-data android:name="com.google.android.gms.version"  android:value="7571000"  tools:replace="android:value" /&gt;
+  <androidinject>&lt;meta-data android:name="com.google.android.gms.version"  android:value="@integer/google_play_services_version"  tools:replace="android:value" /&gt;
 
 
 &lt;activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" /&gt;</androidinject>
@@ -44,6 +44,9 @@
       <uncompress>0</uncompress>
       <ConfigOptions>
         <Config name="Default">
+          <CopyToMask>49385710</CopyToMask>
+        </Config>
+        <Config name="UWP">
           <CopyToMask>49385710</CopyToMask>
         </Config>
       </ConfigOptions>
@@ -202,6 +205,9 @@
       <uncompress>0</uncompress>
       <ConfigOptions>
         <Config name="Default">
+          <CopyToMask>2097160</CopyToMask>
+        </Config>
+        <Config name="UWP">
           <CopyToMask>2097160</CopyToMask>
         </Config>
       </ConfigOptions>

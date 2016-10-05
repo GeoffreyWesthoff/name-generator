@@ -2,6 +2,7 @@
 <assets>
   <Configs name="configs">
     <Config>Configs\Default</Config>
+    <Config>Configs\UWP</Config>
   </Configs>
   <datafiles number="4" name="datafiles"/>
   <NewExtensions>
@@ -84,9 +85,9 @@
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
-    <font>fonts\ft_standard</font>
     <font>fonts\ft_wear</font>
     <font>fonts\ft_appbar</font>
+    <font>fonts\ft_normal</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_generate</object>
@@ -161,6 +162,8 @@
     <object>objects\obj_back</object>
     <object>objects\obj_banner</object>
     <object>objects\obj_buttontype</object>
+    <object>objects\obj_buttontype_region</object>
+    <object>objects\obj_buttontype_region_landscape</object>
     <object>objects\obj_buttontype_landscape</object>
     <object>objects\obj_share</object>
     <object>objects\obj_more</object>
@@ -172,7 +175,9 @@
     <room>rooms\rm_app_landscape_navkeys</room>
     <room>rooms\rm_ios4</room>
     <room>rooms\rm_region</room>
+    <room>rooms\rm_region_navkeys</room>
     <room>rooms\rm_region_landscape</room>
+    <room>rooms\rm_region_landscape_navkeys</room>
     <room>rooms\rm_wear</room>
   </rooms>
   <help>
