@@ -32,16 +32,9 @@ global.loaded=false
 GoogleMobileAds_Init("");
 alarm_set(0,30)
 alarm_set(1,0)
-//OnePlus 3
-GoogleMobileAds_UseTestAds(true,"7DA8A5B216E868636B382A7B9756A4E6")
-//Nexus 5 CM11
-//GoogleMobileAds_UseTestAds(true,"332BA822A105AC4BE040A8609EAD9AD1")
-//Galaxy Tab 3
-//GoogleMobileAds_UseTestAds(true,"E946AAEBA57DDEAC34C8C1EECF52BE8D")
-//Nexus 5 MIUI
-//GoogleMobileAds_UseTestAds(true,"6C0442F1EE5EEE105A3A08E8E193E942")
-//Nexus 5 Nougat
-//GoogleMobileAds_UseTestAds(true,"069B4A6E29F01E78CFB714B6F4F18795")
+//YourPhone
+GoogleMobileAds_UseTestAds(true,"FAKECODE")
+
 </string>
           </argument>
         </arguments>
@@ -104,7 +97,7 @@ dpy=display_get_dpi_y()
 global.dpi=dpx
 global.display_scale=global.dpi/160
 if (room == rm_app || room == rm_app_landscape || room == rm_app_navkeys || room == rm_app_landscape_navkeys){
-GoogleMobileAds_AddBannerAt("ca-app-pub-8630359621774418/4768380881",GoogleMobileAds_Banner,20,global.display_height-(48*global.display_scale))}
+GoogleMobileAds_AddBannerAt("GETYEROWN",GoogleMobileAds_Banner,20,global.display_height-(48*global.display_scale))}
 
 </string>
           </argument>
